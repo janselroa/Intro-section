@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+    --gray: hsl(0, 0%, 41%);
+    --white: hsl(0, 0%, 98%);
+    --block: hsl(0, 0%, 8%);
+    overflow-x: hidden;
+}
+p,a{
+    color: var(--gray);
+}
+a{
+    text-decoration: none;
+}   
+.user{
+    position: absolute;
+}
+
+.user a{
+    margin: 10px;
+}
+.register{
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid var(--gray);
+}
+.logo{
+    display: block;
+    font-size: 2.6rem;
+    position: relative;
+    top: -25px;
+    left: 30px;
+}
+ul{
+        list-style: none;
+
+}
+h1{
+    font-size: 4rem;
+}
+
+.icon-menu,.close-icon{
+    display: none;
+}
+.icon-menu{
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+.container img{
+    display: block;
+    width: 400px;
+    height: 600px;
+    object-fit: contain;
+}
+.attribution{
+    margin-top: 100px;
+}
+.content{
+    margin-top: 50px;
+    width: 500px;
+    margin-right:   100px;
+}
+.content>*{
+    margin-bottom: 50px;
+}
+.make{
+    display: block;
+}
+
+.sublist{
+    margin-top: 10px;
+    display: none;
+    padding: 15px;
+    width: 150px;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0px 5px 30px 10px #dddb;
+    position: absolute;
+    background-color: #fff;
+    z-index: 20;
+}
+.sublist:hover{
+    display: flex;
+}
+
+li:hover>.sublist{
+    display: flex;
+}
+.patrociner{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.patrociner img{
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+}
+/*mobile design*/
+@media screen and (max-width: 700px){
+    .menu-container{
+        display: none;
+        position: absolute;
+        width: 200px;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 10;
+        padding: 10px;
+        box-shadow: -250px 0px 20px 100px hsla(0,0%,20%,.7);
+    }
+    ul{
+        padding: 10px;
+    }
+    li{
+        margin-left: 30px;
+        padding:10px;
+    }
+    .icon-menu,.close-icon{
+        display: block;
+    }
+    .content{
+        padding: 20px;
+    }
+    .close-icon{
+        position: absolute;
+        right: 0;
+    }
+    .user{
+        width: 90%;
+        top: 200px;
+        left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+.content{
+    margin: 30px;
+}
+}
+.icon-menu:hover,.close-icon:hover{
+    cursor: pointer;
+}
+/*desk design*/
+@media screen and (min-width: 700px){
+.menu-container{
+    display: block;
+}
+a:hover{
+    color: #222;
+}
+.sublist li{
+    margin: 0;
+    padding: 7px;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+}
+.menu{
+    display: flex;
+    margin-top: 25px;
+}
+li{
+    margin-left: 25px;
+}   
+.user{
+    right: 20px;
+    top: 20px;
+
+}
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.btn{
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #000;
+}
